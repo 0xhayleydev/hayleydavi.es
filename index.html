@@ -43,20 +43,25 @@
 </head>
 
 <body>
+	<div class="site-container" id="javascript-banner">
+		<h1>For this site to work, you must enable javascript.</h1>
+	</div>
 	<div class="site-container">
 		<header class="site-content sticky-hero">
 			<div class="header-section">
 				<div class="intro">
-					<img class="intro-image" src="/img/hayley-davies.jpg">
+					<img class="intro-image" src="/img/hayley-davies.png">
 					<h1 class="no-margin" style="font-size: 32pt;">Hayley Davies</h1>
-					<h4 class="no-margin">Junior Tools Programmer</h4>
-					<p>A software engineer focusing on tools development within the games industry.</p>
+					<h4 class="no-margin">Tools Programmer</h4>
+					<p>Hi, I'm Hayley, a Tools Programmer with <span id="years-in-industry">X</span> years of experience in the games industry.</p>
+					<p>I enjoy creating software that improves workflows, removes friction, and ultimately makes developers' lives easier.</p>
 				</div>
 				<div class="header-section">
 					<ul>
-						<a class="navigation-title" href="#about"><li><span></span>About</li></a>
-						<a class="navigation-title" href="#experience"><li><span></span>Experience</li></a>
-						<a class="navigation-title" href="#projects"><li><span></span>Projects</li></a>
+						Navigation:
+						<a class="navigation-title" href="#main">➤ Experience</a>
+						<a class="navigation-title" href="#projects">➤ Projects</a>
+						<a class="navigation-title" href="#about">➤ About</a>
 					</ul>
 				</div>
 			</div>
@@ -65,20 +70,9 @@
 				<a class="link-icon" href="https://github.com/0xhayleydev"><i class="fa-brands fa-github"></i></a>
 				<a class="link-icon" href="https://0xhayleydev.itch.io"><i class="fa-brands fa-itch-io"></i></i></a>
 				<a class="link-icon" href="https://www.linkedin.com/in/0xhayleydev"><i class="fa-brands fa-linkedin"></i></a>
-				<a class="link-icon" href="https://twitter.com/0xhayleydev"><i class="fa-brands fa-twitter"></i></a>
 			</div>
 		</header>
-		<div class="site-content" id="about">
-			<div class="content-section">
-				<h1>About</h1>
-				Ever since I was a small child, I've wanted to create video games.
-				I've been spurred on by vivid memories of playing Pokémon in 2007 or Minecraft in 2012; I fell in love with the medium and the industry.
-				I started programming in Secondary School with IT and <b>Computer Science</b> lessons.
-				And outside of school, I used GameMaker and Scratch to play around and create simple games.
-				I went to study <b>Computer Science</b> and <b>Game Design</b> at college between 2016 and 2019, before studying <b>Computing for Games</b> at Falmouth University.
-				In 2023, I graduated from Falmouth with a 2:1 and have since had the privilege of achieving my childhood dream of working in the <b>games industry</b>.
-			</div>
-			<span class="large-space"></span>
+		<div class="site-content" id="main">
 			<div class="content-section" id="experience">
 				<h1>Experience</h1>
 			</div>
@@ -86,9 +80,33 @@
 			<div class="content-section" id="projects">
 				<h1>Projects</h1>
 			</div>
+			<span class="large-space"></span>
+			<div class="content-section" id="about">
+				<h1>About</h1>
+				<p>
+					I discovered programming during my school years, and I quickly became fascinated by it.
+					The idea that I could write a few lines of code and instantly make something happen on my computer was amazing.
+					I would often spend my breaks and after-school hours using Scratch, creating small games for my friends and me to play.
+					From then on, I knew I wanted to work in the games industry.
+				</p>
+				<p>
+					That passion led me to study Game Design at college, before moving on to study Computing for Games at university.
+					Both courses focused heavily on collaborative game development, involving multidisciplinary teams that ranged from artists and animators, to producers and programmers.
+					While I enjoyed the process, I gradually found that my passion wasn't in making video games directly; it was in building the tools and systems that helped other team members work more efficiently.
+				</p>
+				<p>
+					I gravitated toward creating bespoke tools and automated systems that made development smoother for my team and others at the university.
+					Instead of focusing only on gameplay, I became interested in solving workflow problems and improving the daily game development experience.
+				</p>
+				<p>
+					Since joining Dambuster Studios, I've fully embraced tools programming as my speciality.
+					I enjoy creating software that improves workflows, removes friction, and ultimately makes developers' lives easier.
+				</p>
+			</div>
 		</div>
 	</div>
 </body>
 
 <script src="/js/load-projects.js"></script>
+<script src="/js/initialize-page.js"></script>
 </html>

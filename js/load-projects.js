@@ -2,7 +2,11 @@ fetch('/data/projects.json')
     .then((reponse) => reponse.json())
     .then((json) => jsonParse(json));
 
+var technology_data = {}
+
 function jsonParse(data) {
+    technology_data = data['technologies'];
+
     let experiences = data['experiences'];
     for (let i = 0; i < experiences.length; i++) {
         let experience = createExperienceContainer(experiences[i]);
@@ -19,18 +23,18 @@ function jsonParse(data) {
 function createExperienceContainer(experience_data) {
     let a = createLink(experience_data['link']);
 
-    let container = createContainer(experience_data);
+    let container = createContainer('experience-container');
     a.appendChild(container);
 
-    let date_range = createDateRange(experience_data);
-    container.appendChild(date_range);
-
     let img = createIconImage(experience_data);
-    date_range.appendChild(img);
+    container.appendChild(img);
 
-    let project_details = createProjectDetails(experience_data);
+    let project_details = createDetails(experience_data, 'experience-details', false, true);
     container.appendChild(project_details);
 
+    let technologies = createTechnologiesContainer(experience_data['technologies']);
+    project_details.appendChild(technologies);
+    
     return a;
 }
 
@@ -40,10 +44,10 @@ function createProjectContainer(project_data) {
     let img = createBannerImage(project_data);
     a.appendChild(img);
 
-    let container = createContainer(project_data);
+    let container = createContainer('project-container');
     a.appendChild(container);
 
-    let project_details = createProjectDetails(project_data);
+    let project_details = createDetails(project_data, 'project-details', true, true);
     container.appendChild(project_details);
 
     return a;
@@ -57,31 +61,29 @@ function createLink(url) {
     return a;
 }
 
-function createContainer(project_data) {
+function createContainer(classList) {
     let div = document.createElement('div');
-    div.classList.add('project-container');
-
-    return div;
-}
-
-function createDateRange(project_data) {
-    let p = document.createElement('p');
-    p.classList.add('no-margin');
-    p.innerHTML = project_data['date_range'];
-    
-    let div = document.createElement('div');
-    div.classList.add('project-date');
-    div.appendChild(p);
+    div.classList.add(classList);
 
     return div;
 }
 
 function createIconImage(project_data) {
+    let iconContainer = createContainer('icon-container');
+    iconContainer.classList.add();
+
     let img = document.createElement('img');
     img.src = project_data['image'];
     img.classList.add('icon-image');
 
-    return img;
+    let dates = document.createElement('p');
+    dates.innerHTML = project_data['date_range'];
+    dates.classList.add('no-margin');
+
+    iconContainer.appendChild(img);
+    iconContainer.appendChild(dates);
+
+    return iconContainer;
 }
 
 function createBannerImage(project_data) {
@@ -92,29 +94,34 @@ function createBannerImage(project_data) {
     return img;
 }
 
-function createProjectDetails(project_data) {
+function createDetails(project_data, className, show_technologies, show_title) {
     let container = document.createElement('div');
-    container.classList.add('project-details');
+    container.classList.add(className);
 
-    let title = document.createElement('h2');
-    title.classList.add('no-margin');
-    title.innerHTML = project_data['title'];
+    if (show_title)
+    {
+        let title = document.createElement('h2');
+        title.classList.add('no-margin');
+        title.innerHTML = project_data['title'];
+        container.appendChild(title);
 
-    if (project_data['url'] != "") {
-        let i = document.createElement('i');
-        i.classList.add('fa-solid');
-        i.classList.add('fa-arrow-up-right-from-square');
-        title.appendChild(i)
+        if (project_data['url'] != "") {
+            let i = document.createElement('i');
+            i.classList.add('fa-solid');
+            i.classList.add('fa-arrow-up-right-from-square');
+            title.append(i);
+        }
     }
 
     let description = document.createElement('p');
     description.innerHTML = project_data['description'];
 
-    container.appendChild(title);
     container.appendChild(description);
 
-    let technologies = createTechnologiesContainer(project_data['technologies']);
-    container.appendChild(technologies);
+    if (show_technologies) {
+        let technologies = createTechnologiesContainer(project_data['technologies']);
+        container.appendChild(technologies);
+    }
 
     return container;
 }
@@ -122,11 +129,27 @@ function createProjectDetails(project_data) {
 function createTechnologiesContainer(technologies) {
     let container = document.createElement('ul');
     container.classList.add('technologies-preview');
-
+    
     for (let i = 0; i < technologies.length; i++) {
+        let tech_name = technologies[i];
+        let tech_info = technology_data[tech_name]
+        
         let item = document.createElement('div');
         item.classList.add('technology-pill');
-        item.innerHTML = technologies[i];
+
+        let icon = document.createElement('i');
+        if (tech_info['dev_icon'] != "")
+        {
+            icon.classList.add('devicon-' + tech_info['devicon']);
+
+            item.appendChild(icon);
+        }
+        
+        let text = document.createElement('p');
+        text.classList.add('no-margin')
+        text.innerHTML = tech_name;
+    
+        item.appendChild(text);
 
         container.appendChild(item);
     }
