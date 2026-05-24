@@ -1,4 +1,4 @@
-fetch('/data/projects.json')
+fetch('./data/projects.json')
     .then((reponse) => reponse.json())
     .then((json) => jsonParse(json));
 
