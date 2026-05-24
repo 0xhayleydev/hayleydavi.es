@@ -1,0 +1,114 @@
+{
+    "experiences": [
+        {
+            "date_range": "2023 - Present",
+            "image": "/img/dambuster-logo.png",
+            "title": "Tools Programmer - Dambuster Studios ",
+            "link": "https://dambuster.com",
+            "description": "My primary focus is on maintaining existing tools and developing new ones. I am part of a team of developers working on an automation tool, and I am also the primary developer of our internal build distribution software.",
+            "technologies": [
+                "C#",
+                "Python",
+                "C/C++",
+                "WPF"
+            ]
+        },
+        {
+            "date_range": "2022 - 2023",
+            "image": "/img/immersive-business-logo.png",
+            "title": "VR Developer - Immersive Business ",
+            "link": "https://www.falmouth.ac.uk/research/centre-blended-realities/immersive-business",
+            "description": "Working on VR experiences for corporate clients. Most notably, a project for Spaceport Cornwall regarding the first satellite launch from UK soil, where the team were invited to host multiple events in the run-up to the launch.",
+            "technologies": [
+                "C#",
+                "Unity"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "image": "/img/dead-island-2.png",
+            "title": "Dead Island 2 ",
+            "year": 2023,
+            "link": "https://store.steampowered.com/app/934700/Dead_Island_2/",
+            "description": "A smash hit from Dambuster Studios. I started work after the game's main launch, developing in-house tools to continue our success of the game via two story expansions.",
+            "technologies": [
+                "C#",
+                "Python",
+                "C/C++",
+                "WPF"
+            ]
+        },
+        {
+            "image": "/img/space-launch-vr.png",
+            "title": "Space Launch VR ",
+            "year": 2023,
+            "link": "https://www.meta.com/en-gb/experiences/5806581506089142",
+            "description": "A Virtual Reality Experience created to commemorate the very first commercial Space Launch from UK soil. This was contracted by Spaceport Cornwall to get children excited about the launch, and to consider a career in aerospace.",
+            "technologies": [
+                "Unity",
+                "C#"
+            ]
+        },
+        {
+            "image": "/img/lone-sol.png",
+            "title": "Lone Sol ",
+            "year": 2023,
+            "link": "https://nameheregames.itch.io/lone-sol",
+            "description": "Interact with the world through the eyes of a child, solving puzzles and platforming using giant generators and metal robot arms, all with the help of her flying robot companion, RoBo. Explore a ruined City that rewards player exploration with narrative collectables.",
+            "technologies": [
+                "Unreal Engine 5",
+                "C++"
+            ]
+        },
+        {
+            "image": "/img/gruttel-scuttle.png",
+            "title": "Gruttel Scuttle ",
+            "year": 2022,
+            "link": "https://trojanmouse-games.itch.io/gruttel-scuttle",
+            "description": "Interact with and manage a colony of Gruttels as they clean their rubbish-filled home. Select which Gruttels you will bring on your cleaning excursions, and feed them Nana Betsy's special ready meals to power them up throughout the level. Direct the gruttels to the rubbish and back to their recycling machines, snapping them out of any distractions.",
+            "technologies": [
+                "Unity",
+                "C#"
+            ]
+        }
+    ],
+    "technologies":
+    {
+        "C#":
+        {
+            "devicon": "csharp-plain",
+            "tags": ["csharp"]
+        },
+        "Python":
+        {
+            "devicon": "python-plain",
+            "tags": ["python"]
+        },
+        "C/C++":
+        {
+            "devicon": "cplusplus-plain",
+            "tags": ["c", "cplusplus"]
+        },
+        "WPF":
+        {
+            "devicon": "",
+            "tags": ["wpf"]
+        },
+        "Unity":
+        {
+            "devicon": "unity-plain",
+            "tags": ["unity"]
+        },
+        "Unreal Engine 5":
+        {
+            "devicon": "unrealengine-original",
+            "tags": ["unrealengine"]
+        },
+        "C++":
+        {
+            "devicon": "cplusplus-plain",
+            "tags": ["cplusplus"]
+        }
+    }
+}
