@@ -1,0 +1,278 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background-color: #222222;
+	color: white;
+	font-family: "Kode Mono", monospace;
+	font-optical-sizing: auto;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	filter: opacity(50%);
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.no-margin {
+	margin: 0px;
+}
+
+.site-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: flex-start;
+	max-width: 65vw;
+	margin: 0 auto;
+}
+
+.site-content {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: stretch;
+	width: 50%;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	margin: auto;
+}
+
+.sticky-hero {
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	padding: 0;
+	margin: unset;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.intro {
+	max-width: 60%;
+}
+
+.intro-image {
+	max-width: 50%;
+	border-radius: 100%;
+}
+
+.link-icon {
+	font-size: 24px;
+	color: white;
+	margin: 0 8px;
+}
+
+.link-icon:hover {
+	filter: opacity(50%);
+}
+
+.site-content {
+	margin-bottom: 0;
+}
+
+.content-section>h1 {
+	margin: 0
+}
+
+.large-space {
+	height: 50px;
+}
+
+.content-section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+	gap: 8px;
+}
+
+.project-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+	border: #555555 2px solid;
+	border-top-style: none;
+	border-radius: 0px 0px 4px 4px;
+	background-color: #FFFFFF08;
+}
+
+.project-link {
+	padding: 12px 2px;
+}
+
+.project-link:hover {
+	transition-duration: 200ms;
+	filter: opacity(50%);
+}
+
+.project-link:active {
+	transition-duration: 200ms;
+}
+
+.project-details {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+	padding: 0px;
+	padding-left: 8px;
+}
+
+.experience-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: flex-start;
+	border: #555555 2px solid;
+	border-radius: 4px;
+	background-color: #FFFFFF08;
+	padding: 4px;
+}
+
+.experience-details {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+	padding: 0px;
+	padding-left: 12px;
+	width: 75%;
+}
+
+.technologies-preview {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.technology-pill {
+	display: flex;
+	min-width: 40px;
+	border-radius: 20px;
+	background-color: #666666;
+	padding: 4px 16px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 4px;
+	gap: 4px;
+}
+
+.technology-pill>i {
+	font-size: 1rem;
+}
+
+.icon-container {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+	text-align: center;
+}
+
+.icon-image {
+	filter: drop-shadow(8px 8px #00000022);
+	aspect-ratio: 1;
+	width: 100%;
+}
+
+.banner-image {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 4/1;
+	box-sizing: border-box;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.navigation-title {
+	display: flex;
+}
+
+.navigation-title>span {
+	width: 2rem;
+}
+
+@media (max-aspect-ratio: 4/3)
+{
+	.site-container
+	{
+		flex-direction: column;
+		justify-content: space-around;
+		max-width: 100vw;
+		margin: 8px;
+	}
+
+	.site-content {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: center;
+		width: 100%;
+		padding: 2rem 0;
+		margin: auto;
+	}
+
+	.sticky-hero {
+		position: relative;
+		height: auto;
+	}
+	
+	.intro {
+		max-width: 100%;
+	}
+
+	.intro-image {
+		max-width: 250px;
+	}
+}
+
+@media (max-width: 1000px)
+{
+	.site-container {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media (max-height: 600px)
+{
+	.sticky-hero {
+		position: static;
+		height: fit-content;
+	}
+}

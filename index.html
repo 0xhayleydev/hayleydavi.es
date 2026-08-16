@@ -1,159 +1,112 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Home - hayleydavi.es</title>
+	<link rel="stylesheet" href="./css/site.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<title>Hayley Davies - Portfolio</title>
+	<meta name="description" content="View my portfolio; a collation of all projects which I have worked on. Learn more about me and the things I work on. The most up-to-date resource to view what I have worked on.">
+	
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://hayleydavi.es">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Hayley Davies - Portfolio">
+	<meta property="og:description" content="View my portfolio; a collation of all projects which I have worked on. Learn more about me and the things I work on. The most up-to-date resource to view what I have worked on.">
+	<meta property="og:image" content="https://hayleydavi.es/img/open-graph-image.png">
+	
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="hayleydavi.es">
+	<meta property="twitter:url" content="https://hayleydavi.es">
+	<meta name="twitter:title" content="Hayley Davies - Portfolio">
+	<meta name="twitter:description" content="View my portfolio; a collation of all projects which I have worked on. Learn more about me and the things I work on. The most up-to-date resource to view what I have worked on.">
+	<meta name="twitter:image" content="https://hayleydavi.es/img/open-graph-image.png">
 
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
-    <link rel="stylesheet" href="./css/main-site.css">
-    <link rel="stylesheet" href="./css/three-promo.css">
-    <link rel="stylesheet" href="./css/scroll-prompt.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/site.webmanifest">
+	<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="./favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="./favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-    <script src="https://kit.fontawesome.com/2d7cda5ffb.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+	<script src="https://kit.fontawesome.com/2d7cda5ffb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!--TEMPORARY HEADING TO SAY THE SITE IS A WIP-->
-    <div style="text-align: center;">
-        <style>
-            #toggle {
-                display: none;
-            }
-
-            #toggle:checked~* {
-                display: none;
-            }
-        </style>
-        <input type="checkbox" id="toggle">
-        <label for="toggle">
-            <div class="wip-heading">
-                <h1>!! WIP !!</h1>
-                <p>
-                    This site is a work in progress and as such, some things
-                    may be unfinished and not look nor function as intended. <br>
-                    (P.S. Click this banner to hide it!)
-                </p>
-            </div>
-        </label>
-    </div>
-    <!--END OF TEMPORARY HEADING-->
-
-    <div class="body">
-        <!--MAIN SECTION | INFO ABOUT ME & SKILLS-->
-        <div class="page-section">
-            <div class="scroll-prompt">
-                <i class="fa-4x fa-solid fa-angle-down shape"></i>
-            </div>
-            <div class="section-split section-split-transition">
-                <div class="section-content">
-                    <h1>Hayley Davies</h1>
-                    <p>A Collection of My Game Making Things</p>
-                    <img class="square-image small border" src="img/site-logo.jpg"
-                        alt="Profile Picture of Hayley Davies">
-                </div>
-                <div class="section-content">
-                    <h1>Skills</h1>
-                    <div class="flex-div">
-                        <div class="tech-icon">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" /><br>
-                        </div>
-                        <div class="tech-icon">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" /><br>
-                        </div>
-                        <div class="tech-icon">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" /><br>
-                        </div>
-                        <div class="tech-icon">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /><br>
-                        </div>
-                        <div class="tech-icon">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /><br>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" /><br>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-content wide">
-                    <h1>About Me</h1>
-                    <div class="text-between-emoji">
-                        <p>🎮</p>
-                        <p>Junior Tools Programmer @ Dambuster Studios</p>
-                        <p>🎮</p>
-                        <p>🎓</p>
-                        <p>Graduate from Falmouth University</p>
-                        <p>🎓</p>
-                        <p>📜</p>
-                        <p>2:1 in BSc(Hons) Computing for Games</p>
-                        <p>📜</p>
-                        <p>🏎️</p>
-                        <p>I'm a huge F1 Fan</p>
-                        <p>🏎️</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://0xhayleydev.itch.io"><i class="fa-brands fa-itch-io"></i></a>
-                        <a href="https://github.com/0xhayleydev"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://linkedin.com/in/0xhayleydev"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="mailto:contact@hayleydavi.es"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://twitter.com/0xhayleydev"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--SECOND SECTION | SHOWCASE GAMES-->
-        <div class="page-section">
-            <div class="section-split section-split-transition">
-                <div class="section-content wide">
-                    <h1>Games</h1>
-                    <p>A collection of the games that I have worked on.</p>
-                </div>
-                <!--MAIN GAMES SHOWCASE-->
-                <div class="three-promo" id="games-showcase">
-                    <!--GAMES GO HERE AUTO FILLED BY JS-->
-                    Please enable JavaScript to view this content.
-                </div>
-            </div>
-        </div>
-
-        <!--FINAL SECTION | SHOWCASE NON-GAME PROJECTS-->
-        <div class="page-section">
-            <div class="section-split section-split-transition">
-                <div class="section-content wide">
-                    <h1>Misc</h1>
-                    <p>A collection of my miscellaneous things that I have
-                        worked on, from mods to websites and everything in
-                        between.</p>
-                </div>
-                <!--MAIN PROJECTS SHOWCASE-->
-                <div class="three-promo" id="projects-showcase">
-                    <!--PROJECTS GO HERE AUTO FILLED BY JS-->
-                    Please enable JavaScript to view this content.
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="site-container" id="javascript-banner">
+		<h1>For this site to work, you must enable javascript.</h1>
+	</div>
+	<div class="site-container">
+		<header class="site-content sticky-hero">
+			<div class="header-section">
+				<div class="intro">
+					<img class="intro-image" src="./img/hayley-davies.png">
+					<h1 class="no-margin" style="font-size: 32pt;">Hayley Davies</h1>
+					<h4 class="no-margin">Tools Programmer</h4>
+					<p>Hi, I'm Hayley, a Tools Programmer with <span id="years-in-industry">X</span> years of experience in the games industry.</p>
+					<p>I enjoy creating software that improves workflows, removes friction, and ultimately makes developers' lives easier.</p>
+				</div>
+				<div class="header-section">
+					<ul>
+						Navigation:
+						<a class="navigation-title" href="#main">➤ Experience</a>
+						<a class="navigation-title" href="#projects">➤ Projects</a>
+						<a class="navigation-title" href="#about">➤ About</a>
+					</ul>
+				</div>
+			</div>
+			<div class="header-section">
+				<a class="link-icon" href="mailto:hayley@0xhayley.dev"><i class="fa-regular fa-envelope"></i></a>
+				<a class="link-icon" href="https://github.com/0xhayleydev"><i class="fa-brands fa-github"></i></a>
+				<a class="link-icon" href="https://0xhayleydev.itch.io"><i class="fa-brands fa-itch-io"></i></i></a>
+				<a class="link-icon" href="https://www.linkedin.com/in/0xhayleydev"><i class="fa-brands fa-linkedin"></i></a>
+			</div>
+		</header>
+		<div class="site-content" id="main">
+			<div class="content-section" id="experience">
+				<h1>Experience</h1>
+			</div>
+			<span class="large-space"></span>
+			<div class="content-section" id="projects">
+				<h1>Projects</h1>
+			</div>
+			<span class="large-space"></span>
+			<div class="content-section" id="about">
+				<h1>About</h1>
+				<p>
+					I discovered programming during my school years, and I quickly became fascinated by it.
+					The idea that I could write a few lines of code and instantly make something happen on my computer was amazing.
+					I would often spend my breaks and after-school hours using Scratch, creating small games for my friends and me to play.
+					From then on, I knew I wanted to work in the games industry.
+				</p>
+				<p>
+					That passion led me to study Game Design at college, before moving on to study Computing for Games at university.
+					Both courses focused heavily on collaborative game development, involving multidisciplinary teams that ranged from artists and animators, to producers and programmers.
+					While I enjoyed the process, I gradually found that my passion wasn't in making video games directly; it was in building the tools and systems that helped other team members work more efficiently.
+				</p>
+				<p>
+					I gravitated toward creating bespoke tools and automated systems that made development smoother for my team and others at the university.
+					Instead of focusing only on gameplay, I became interested in solving workflow problems and improving the daily game development experience.
+				</p>
+				<p>
+					Since joining Dambuster Studios, I've fully embraced tools programming as my speciality.
+					I enjoy creating software that improves workflows, removes friction, and ultimately makes developers' lives easier.
+				</p>
+			</div>
+		</div>
+	</div>
 </body>
-<script type="text/javascript" src="./js/page.js"></script>
-<script type="text/javascript" src="./js/load-projects.js"></script>
-<script type="text/javascript" src="./js/hide-scroll-prompt.js"></script>
 
+<script src="./js/load-projects.js"></script>
+<script src="./js/initialize-page.js"></script>
 </html>
